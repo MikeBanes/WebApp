@@ -1,5 +1,6 @@
 ﻿html {
-    font-family: "Noto Sans", "Brush Script MT"; color: rgba(0,0,0,0.65);
+    font-family: "Noto Sans", "Brush Script MT";
+    color: rgba(0,0,0,0.65);
     background-color: white;
     font-size: 32px;
     margin: 0;
@@ -12,36 +13,26 @@
 nav {
 }
 
-nav .container{
+nav .container {
     border: 1px solid red;
     padding: 0 24px;
-   /* background-color: #f0f0f0;*/
     display: flex;
     align-items: center;
     height: 64px;
 }
 
 nav .container .icon {
-    /* Three sections; icon, tm, and links.*/
-    /*border: 1px solid blue;*/
-    /*background-color: wheat;*/
-    /*height: 32px;*/
-    /*width: 64px;*/
     display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #icon {
-    /*The icon*/
     height: 36px;
 }
+
 nav .container .tm {
-    /* Three sections; icon, tm, and links.*/
-/*    border: 1px solid black;
-*/    /*background-color: wheat;*/
-    /*height: 32px;*/
-   /* width: 64px;*/
-    display: flex;
-    display: inline-flex;
     padding: 0 0;
     font-size: .5625rem;
 }
@@ -51,26 +42,46 @@ nav .container .tm {
     font-weight: bold;
 }
 
-#tmB{
+#tmB {
     /*"Academy"*/
     color: gray;
     font-weight: 400;
 }
 
-nav .container .links {
-    /* Three sections; icon, tm, and links.*/
+nav .container .links-desktop {
     margin-left: auto;
-    /*border: 1px solid green;
-    background-color: wheat;*/
-    /*height: 32px;*/
-    display: flex;
+    display: inline-flex;
     padding: 16px 0;
     gap: 16px;
     font-size: .5rem;
 }
 
-nav .container .links .links-txt {
-    /*border: 1px solid blue;*/
+nav .container .links-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 16px;
+}
+
+nav .container .links-mobile .links-txt {
+}
+
+/* Mobile Device media settings */
+@media screen and (max-width: 768px) {
+    nav .container .links-desktop {
+        display: none;
+    }
+    nav .container .tm {
+        display: none;
+    }
+}
+/* Desktop Settings media settings */
+@media screen and (min-width: 768px) {
+    nav .container .links-mobile {
+        display: none;
+    }
 }
 
 /* Banner section of coding; including banner image and start here. */
