@@ -27,6 +27,10 @@ h3 {
     font-weight: 800;
 }
 
+p {
+    font-size: .5rem;
+}
+
 .container {
     max-width: 1100px;
     margin-left: auto;
@@ -227,6 +231,150 @@ button {
     }
 }
 
+/* Information Section */
+.information {
+}
+
+.information .container {
+border: 1px solid red;
+display: flex;
+padding: 32px 0px 32px 24px;
+gap: 24px;
+height: auto; 
+}
+
+.information .container .desktop {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 60%;
+}
+
+.information .container .desktop .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.information .container .desktop .image img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+}
+
+.information .container .desktop .text {
+display: flex;
+flex-direction: column;
+padding: 32px 0 0 0;
+height: 50%;
+}
+
+.information .container .desktop .text .text-header {
+}
+
+.information .container .desktop .text .text-quote {
+    padding: 24px 0 0 0;
+}
+
+.information .container .desktop .text .text-cite {
+    margin-top: auto;
+}
+
+.information .container .campus {
+height: 100%;
+width: 40%;
+}
+
+.information .container .campus .box {
+    padding: 0 0 16px 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.information .container .campus .box .image {
+
+    width: 35%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+                    
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.information .container .campus .box .image img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+}
+
+.information .container .campus .box .text {
+    width: 65%;
+    height: auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.information .container .campus .box .text .text-header {
+    display: flex;
+    flex: 2;
+    align-items: flex-end;
+}
+
+.information .container .campus .box .text .text-info {
+    flex: 1;
+    padding: 8px 0;
+}
+
+.information .container .campus .box .text .text-more {
+    color: cornflowerblue;
+    display: flex;
+    flex: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+    .information .container {
+        padding: 16px;
+        gap: 0;
+    }
+     
+
+    .information .container .desktop {
+        display: none;
+    }
+
+   .information .container .campus {
+       width: 100%;
+       height: auto;
+
+    }
+    .information .container .campus .box {
+        padding: 0 16px 32px 16px;
+    }
+    .information .container .campus .box .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .information .container .campus .box .text {
+        width: 100%; 
+        padding: 12px 0 0 0;
+    }
+}
+
+
+
 
 
 
@@ -236,6 +384,7 @@ footer {
 }
 
 footer .container {
+    border: 1px solid red;
     height: 32px;
     display: flex;
     align-items:center;
