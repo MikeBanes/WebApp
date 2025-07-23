@@ -115,14 +115,12 @@ nav .container .links-mobile .links-txt {
 
 /* Banner section of coding; including banner image and start here. */
 .banner {
-
 }
 
 .banner .container {
     border: 1px solid red;
     background-color: lightgray;
     position: relative;
-    /*top: 64px;*/
     height: 521px;
     width: 100%;
     display: flex;
@@ -131,41 +129,26 @@ nav .container .links-mobile .links-txt {
     gap: 24px;
 }
 
-/*.banner .container .image {*/
-    /*border: 1px solid blue;*/
-    /*background-color: blue;*/
-    /*width: 60%;*/
-    /*height: 100%;*/ /* to be deleted *//*
-    padding: 32px 24px;*/
-/*}*/
 
 .banner .container .image {
-    width: 600px;    /* Set your desired fixed width */
-    height: 100%;    /* Or a fixed height, e.g., 400px */
-    flex: 0 0 600px; /* Prevent flexbox from resizing it */
-    /* Remove or comment out any width: 60%; or similar */
+    width: 600px;    
+    height: 100%;    
+    flex: 0 0 600px; 
 }
 .banner img {
-    max-width: 100%;   /* Image will not exceed the container's width */
-    max-height: 100%;  /* Image will not exceed the container's height */
-    /*height: auto;*/      /* Maintain aspect ratio */
-    /*width: auto;*/       /* Maintain aspect ratio */
-    display: block;    /* Remove inline spacing */
+    max-width: 100%; 
+    max-height: 100%;
+    display: block;  
 }
 
 .banner .container .text {
-    /*border: 1px solid black;*/
-    /*background-color: black;*/
-    width: 500px;    /* Set your desired fixed width */
-    height: 100%;    /* Or a fixed height, e.g., 400px */
-    /*width: 40%;*/
-    /*height: 521px;*/
+    width: 500px;  
+    height: 100%;  
     display: flex;
     flex-direction: column;
 }
 
 .banner .container .text .top {
-    /*background-color: antiquewhite;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -173,22 +156,17 @@ nav .container .links-mobile .links-txt {
 }
 
 .banner .container .text .middle {
-    /*background-color: aqua;*/
     display: flex;
     align-items: center;
     flex: 1;
 }
 
 .banner .container .text .bottom {
-    /*background-color: chartreuse;*/
-    /*text-align: center;*/
     display: flex;
     justify-content: center;
     margin-top: auto;
     flex: 2;
 }
-
-
 
 .banner .container .text {
     display: flex;
@@ -196,33 +174,61 @@ nav .container .links-mobile .links-txt {
     height: 100%;
 }
 
-.banner .container .text .top,
-.banner .container .text .middle {
-    /* No height, just content size */
-}
-
 .banner .container .text .bottom {
-    margin-top: auto; /* Pushes .bottom to the bottom */
+    margin-top: auto;
     display: flex;
     justify-content: center;
 }
 
-/*.banner .container .text .bottom {
-    background-color: orange;
-    color: gray;
-    padding: 8px 16px;
-    font-size: 1.8rem;*/
-    /*cursor: pointer;*/
-/*}*/
-
 button {
     background-color: dimgray;
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.625rem;
     border: none;
     padding: 8px 80px;
-    height: 32px;
+    height: 36px;
 }
+
+@media screen and (max-width: 768px) {
+    .banner .container {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    .banner .container .image {
+        width: 100%;
+        height: 300px;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+    .banner .container .text {
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
+        /*padding: 32px 16px;*/
+    }
+    .banner .container .text .top {
+/*        border: 1px solid red;
+*/        padding: 0 16px 32px 16px;
+        flex: 2;
+    }
+    .banner .container .text .middle {
+        border: 1px solid green;
+        padding: 0 16px;
+        flex: 1;
+    }
+    .banner .container .text .bottom {
+/*        border: 1px solid blue;
+*/        padding: 24px 16px 32px 16px;
+        flex: 1;
+    }
+    button {
+        background-color: darkgray;
+    }
+}
+
+
+
 
 /* Footer section of coding */
 footer {
