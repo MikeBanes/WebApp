@@ -63,7 +63,7 @@ nav {
 }
 
     nav .container {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         padding: 0 24px;
         display: flex;
         align-items: center;
@@ -140,7 +140,7 @@ nav .container .links-mobile {
 }
 
     .banner .container {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         background-color: lightgray;
         position: relative;
         height: 521px;
@@ -240,7 +240,7 @@ button {
             }
 
             .banner .container .text .middle {
-                border: 1px solid green;
+                /*border: 1px solid green;*/
                 padding: 0 16px;
                 flex: 1;
             }
@@ -261,7 +261,7 @@ button {
 }
 
     .information .container {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         display: flex;
         padding: 32px 0px 32px 24px;
         gap: 24px;
@@ -401,7 +401,7 @@ button {
 }
 
     .content .container {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         background-color: lightgray;
         display: flex;
         flex-direction: column;
@@ -435,7 +435,7 @@ button {
 
             .content .container .courses .box {
                 /* border: 1px solid black;*/
-                background-color: white;
+                /*background-color: white;*/
                 width: 30%; /* adjust later */
                 /*height: auto;*/
                 display: flex;
@@ -536,7 +536,7 @@ button {
 }
 
 .thesis .container {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     background-color: white;
     
     display: flex;
@@ -686,16 +686,13 @@ button {
     }
 
     .thesis .container .header {
-        /*border: 1px solid black;*/
-        /*background-color: lightblue;*/
-
         padding: 32px 0 16px 0;
     }
 
     .thesis .container .content {
-        border: 1px solid green;
-        background-color: wheat;
-        /*display: flex;*/
+       /* border: 1px solid green;*/
+        /*background-color: wheat;*/
+        display: flex;
         /*height: 800px;*/
         padding: 0 0 24px 0;
         box-sizing: border-box;
@@ -705,23 +702,11 @@ button {
             /*border: 1px solid blue;*/
             /*background-color: lightblue;*/
             display: flex;
-            /*flex-direction: column;*/
+            flex-direction: column;
             box-sizing: border-box;
-            /*width: 60%;*/
-            /*height: 95%;*/
+            width: 100%;
+            height: 100%;
         }
-
-            .thesis .container .content .video .vid {
-                /*border: 1px solid red;*/
-                background-color: lightcyan;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-                box-sizing: border-box;
-                /*width: 60%;*/
-                /*height: 80%;*/
-            }
 
     .thesis .container .content .video .text {
         display: none;
@@ -742,8 +727,7 @@ footer {
 }
 
     footer .container {
-        border: 1px solid red;
-        height: 32px;
+        background-color: white !important;
         display: flex;
         align-items: center;
         padding: 8px 24px;
